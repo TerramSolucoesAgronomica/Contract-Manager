@@ -1,0 +1,103 @@
+{
+  "cliente": "0_ALEX CALIL RAHAL",
+  "arquivo_pdf": "291_0_ALEX CALIL RAHAL.pdf",
+  "dados_gerais": {
+    "fazenda": "JACUBA IPORÁ - GO",
+    "grade": "3",
+    "área": "1.870,00 HA"
+  },
+  "analises": [
+    {
+      "nome_produto": "FERTILE BASE MAX",
+      "descricao_bruta": "Amostras 0-10 cm (100%); Amostras 10-20 cm (25%); Análise 0-10 cm (100% Macro, 15% Micro); Análise 10-20 cm (100% Macro); 3 calibrações",
+      "componentes": [
+        {
+          "profundidade": "0-10 cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "15%"
+          },
+          "observacoes": "3 calibrações"
+        },
+        {
+          "profundidade": "10-20 cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": "3 calibrações"
+        }
+      ]
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA (HA)",
+      "valor": "1.870,00",
+      "valor_extenso": "um mil oitocentos e setenta"
+    },
+    {
+      "tipo": "PRODUTO",
+      "nome": "FERTILE BASE MAX",
+      "valor": ""
+    },
+    {
+      "tipo": "PRODUTO_AREA",
+      "produto": "FERTILE BASE MAX",
+      "valor": "1.870,00",
+      "valor_extenso": "um mil oitocentos e setenta"
+    },
+    {
+      "tipo": "CUSTO_HECTARE",
+      "produto": "FERTILE BASE MAX",
+      "valor": "63,00",
+      "valor_extenso": "sessenta e três"
+    },
+    {
+      "tipo": "DESCONTO",
+      "produto": "FERTILE BASE MAX",
+      "valor": "10,0%",
+      "valor_extenso": "10.0%"
+    },
+    {
+      "tipo": "VALOR_TOTAL",
+      "produto": "FERTILE BASE MAX",
+      "valor": "117.810,00",
+      "valor_extenso": "cento e dezessete mil oitocentos e dez"
+    },
+    {
+      "tipo": "VALOR TOTAL ANUAL",
+      "valor": "117.810,00",
+      "valor_extenso": "cento e dezessete mil oitocentos e dez"
+    }
+  ],
+  "outros_servicos": [
+    {
+      "nome": "VARIASEED",
+      "area_ha": "1.870,00",
+      "custo_hectare": "0,00",
+      "desconto": "100,0%",
+      "valor": "0,00",
+      "duracao": "",
+      "valor_extenso": "zero",
+      "custo_hectare_extenso": "zero"
+    }
+  ],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "30/03/2026",
+      "valor": "58.905,00",
+      "ipca": "",
+      "valor_extenso": "cinquenta e oito mil novecentos e cinco"
+    },
+    {
+      "numero": "2",
+      "data": "30/07/2026",
+      "valor": "58.905,00",
+      "ipca": "",
+      "valor_extenso": "cinquenta e oito mil novecentos e cinco"
+    }
+  ]
+}
