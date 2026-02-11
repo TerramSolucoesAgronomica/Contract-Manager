@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { format } from 'date-fns';
 import { Plus, Trash2, ScanLine } from 'lucide-react';
@@ -19,7 +19,8 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select";
+} from '@/components/ui/select';
+import { SoilAnalysisTable } from './SoilAnalysisTable';
 import { contractFormSchema, ContractFormSchemaType } from '@/lib/schemas/contractSchema';
 import { ContractData, Payment } from '@/types';
 import { formatCPF, formatCNPJ, formatPhone, formatCEP, removeFormatting, formatCurrency } from '@/lib/utils/formatters';
@@ -86,6 +87,10 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
         technicalVisitsAmount: initialData?.services?.technicalVisitsAmount || 0,
         compactionGridSize: initialData?.services?.compactionGridSize || '',
         calibrationTotal: initialData?.services?.calibrationTotal || '',
+
+        // Tabelas de Análise
+        soilAnalysisLavoura: initialData?.soilAnalysisLavoura || [],
+        soilAnalysisAbertura: initialData?.soilAnalysisAbertura || [],
 
         // Testemunhas
         witness1Name: initialData?.witness1Name || '',
@@ -166,9 +171,13 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
             // Adicione mais validações conforme necessário
         }
 
-        const isValid = await form.trigger(fieldsToValidate);
+        // Validação relaxada a pedido do usuário
+        // const isValid = await form.trigger(fieldsToValidate as any);
+        const isValid = true;
+
         if (isValid) {
-            setCurrentStep(prev => Math.min(prev + 1, STEPS.length));
+            setCurrentStep(prev => prev + 1);
+            window.scrollTo(0, 0);
         }
     };
 
@@ -207,7 +216,7 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
             },
 
             contractNumber: data.contractNumber,
-            startDate: new Date(data.startDate),
+            startDate: data.startDate ? new Date(data.startDate) : new Date(),
             durationMonths: data.durationMonths,
 
             farmName: data.farmName,
@@ -242,9 +251,17 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
             witness1Document: data.witness1Document,
             witness2Name: data.witness2Name,
             witness2Document: data.witness2Document,
+
+            soilAnalysisLavoura: data.soilAnalysisLavoura,
+            soilAnalysisAbertura: data.soilAnalysisAbertura,
         };
 
         onSubmit(contractData);
+    };
+
+    const handleGenerateClick = () => {
+        const values = form.getValues();
+        handleFormSubmit(values);
     };
 
     return (
@@ -615,6 +632,21 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
                             <div className="space-y-6">
 
                                 {/* Consultoria de Fertilidade */}
+                                {form.watch('hasSoilAnalysis') && (
+                                    <div className="mt-4 animate-in fade-in slide-in-from-top-2">
+                                        <SoilAnalysisTable
+                                            control={form.control}
+                                            name="soilAnalysisLavoura"
+                                            label="Áreas de Lavoura"
+                                        />
+                                        <SoilAnalysisTable
+                                            control={form.control}
+                                            name="soilAnalysisAbertura"
+                                            label="Áreas de Abertura"
+                                        />
+                                    </div>
+                                )}
+
                                 <div className="p-4 border rounded-lg bg-slate-50">
                                     <div className="flex items-center space-x-2">
                                         <FormField
@@ -995,7 +1027,7 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
                                 Próximo
                             </Button>
                         ) : (
-                            <Button type="submit" className="bg-green-600 hover:bg-green-700">
+                            <Button type="button" onClick={handleGenerateClick} className="bg-green-600 hover:bg-green-700">
                                 Gerar Contrato
                             </Button>
                         )}

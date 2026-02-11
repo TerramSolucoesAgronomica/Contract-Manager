@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { ParseResult, ContractData } from '@/types';
+import { ParseResult, ContractData, SoilAnalysisLayer } from '@/types';
 import { parse } from 'date-fns';
 
 /**
@@ -153,9 +153,26 @@ export async function parseJson(file: File): Promise<ParseResult<Partial<Contrac
 
         // Verifica array de 'analises'
         if (Array.isArray(json.analises)) {
+            data.soilAnalysisLavoura = [];
+
             json.analises.forEach((a: any) => {
                 if (a.nome_produto) checkServiceText(a.nome_produto);
                 if (a.descricao_bruta) checkServiceText(a.descricao_bruta);
+
+                // Extrair camadas se existirem
+                if (Array.isArray(a.componentes)) {
+                    a.componentes.forEach((c: any) => {
+                        data.soilAnalysisLavoura!.push({
+                            depth: c.profundidade || '',
+                            samplesPct: c.estratificacao || '',
+                            macroPct: c.analises?.macro || '',
+                            microPct: c.analises?.micro || '',
+                            physicalPct: '', // Não presente no JSON padrão
+                            sulfurPct: '',   // Não presente no JSON padrão
+                            extraPct: ''     // Não presente no JSON padrão
+                        });
+                    });
+                }
             });
         }
 
