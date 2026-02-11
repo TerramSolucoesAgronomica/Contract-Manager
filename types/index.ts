@@ -56,6 +56,16 @@ export interface SoilAnalysis {
     observations?: string;      // Observações técnicas
 }
 
+export interface SoilAnalysisLayer {
+    depth: string; // "0-10 cm"
+    samplesPct?: string;
+    macroPct?: string;
+    microPct?: string;
+    physicalPct?: string;
+    sulfurPct?: string;
+    extraPct?: string;
+}
+
 /**
  * Dados completos do contrato
  * Este é o tipo principal usado em todo o sistema
@@ -90,7 +100,10 @@ export interface ContractData {
     services: ContractedServices;
 
     // Dados Técnicos
-    soilAnalyses?: SoilAnalysis[];  // Array de análises de solo (opcional)
+    soilAnalyses?: SoilAnalysis[];  // Array de análises de solo (opcional) - Mantido para compatibilidade
+    // Novas tabelas de análise
+    soilAnalysisLavoura?: SoilAnalysisLayer[];
+    soilAnalysisAbertura?: SoilAnalysisLayer[];
 
     // Testemunhas (opcional)
     witness1Name?: string;
@@ -188,6 +201,10 @@ export interface ContractFormData {
     compactionGridSize: string;
     calibrationTotal: string;
 
+    // Tabelas de Análise (JSON string para facilitar formulario)
+    soilAnalysisLavoura: SoilAnalysisLayer[];
+    soilAnalysisAbertura: SoilAnalysisLayer[];
+
     // Testemunhas
     witness1Name: string;
     witness1Document: string;
@@ -268,6 +285,10 @@ export interface TemplateData {
     qtdeVisitas: string;
     gradeCompactacao: string;
     totalCalibracoes: string;
+
+    // Tabelas de Análise
+    lavouraLayers: Array<SoilAnalysisLayer>;
+    aberturaLayers: Array<SoilAnalysisLayer>;
 
     // Parcelas (array para loop no template)
     qtdeParcelas: number;

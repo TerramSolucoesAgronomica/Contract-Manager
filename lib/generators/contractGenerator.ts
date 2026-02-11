@@ -108,6 +108,50 @@ export function contractDataToTemplateData(data: ContractData): TemplateData {
         diaAssinatura: hoje.getDate().toString().padStart(2, '0'),
         mesAssinatura: meses[hoje.getMonth()],
         anoAssinatura: hoje.getFullYear().toString(),
+
+        // Tabelas de Análise (garante array vazio se undefined)
+        // Tabelas de Análise (garante array vazio se undefined)
+        // Tabelas de Análise (garante array vazio se undefined)
+        lavouraLayers: (data.soilAnalysisLavoura || []).map(layer => {
+            const formatField = (val: string | undefined, suffix: string = '') => {
+                const num = val ? val.replace(/[^0-9.,]/g, '') : '';
+                const res = num ? `(${num})%${suffix}` : `( )%${suffix}`;
+                console.log(`[DEBUG] val: '${val}', num: '${num}', res: '${res}'`);
+                return res;
+            };
+
+            return {
+                ...layer,
+                samplesFormatted: formatField(layer.samplesPct),
+                // Campos individuais para colunas separadas
+                macroFormatted: formatField(layer.macroPct, ' Macro'),
+                microFormatted: formatField(layer.microPct, ' Micro'),
+                physicalFormatted: formatField(layer.physicalPct, ' Física'),
+                sulfurFormatted: formatField(layer.sulfurPct, ' Enxofre'),
+                extraFormatted: formatField(layer.extraPct, ' ______'),
+                // Campo combinado (fallback)
+                analisesFormatted: `${formatField(layer.macroPct, ' Macro')}  ${formatField(layer.microPct, ' Micro')}  ${formatField(layer.physicalPct, ' Física')}  ${formatField(layer.sulfurPct, ' Enxofre')}  ${formatField(layer.extraPct, ' ______')}`
+            };
+        }),
+        aberturaLayers: (data.soilAnalysisAbertura || []).map(layer => {
+            const formatField = (val: string | undefined, suffix: string = '') => {
+                const num = val ? val.replace(/[^0-9.,]/g, '') : '';
+                return num ? `(${num})%${suffix}` : `( )%${suffix}`;
+            };
+
+            return {
+                ...layer,
+                samplesFormatted: formatField(layer.samplesPct),
+                // Campos individuais
+                macroFormatted: formatField(layer.macroPct, ' Macro'),
+                microFormatted: formatField(layer.microPct, ' Micro'),
+                physicalFormatted: formatField(layer.physicalPct, ' Física'),
+                sulfurFormatted: formatField(layer.sulfurPct, ' Enxofre'),
+                extraFormatted: formatField(layer.extraPct, ' ______'),
+                // Fallback
+                analisesFormatted: `${formatField(layer.macroPct, ' Macro')}  ${formatField(layer.microPct, ' Micro')}  ${formatField(layer.physicalPct, ' Física')}  ${formatField(layer.sulfurPct, ' Enxofre')}  ${formatField(layer.extraPct, ' ______')}`
+            };
+        }),
     };
 }
 
@@ -132,6 +176,42 @@ export async function generateContract(
         const templateData = await response.arrayBuffer();
         const zip = new PizZip(templateData);
 
+        // Pré-processar XML para corrigir tags quebradas pelo Word
+        // O Word divide tags como {samplesFormatted} em múltiplos "runs" XML e
+        // insere <w:proofErr> (verificação ortográfica) entre eles.
+        const xmlFiles = ['word/document.xml', 'word/header1.xml', 'word/header2.xml', 'word/footer1.xml', 'word/footer2.xml'];
+        xmlFiles.forEach(xmlFile => {
+            const file = zip.file(xmlFile);
+            if (!file) return;
+            let xml = file.asText();
+
+            // Passo 1: Remover TODOS os elementos <w:proofErr.../> (são apenas marcadores de spell-check)
+            xml = xml.replace(/<w:proofErr[^>]*\/>/g, '');
+
+            // Passo 2: Juntar runs adjacentes que formam tags de template
+            // Padrão: <w:t>{</w:t></w:r> ... <w:r ...><...><w:t>tagName</w:t></w:r> ... <w:r><...><w:t>}</w:t>
+            // Estratégia: encontrar texto com { sem }, mesclar com próximo <w:t> até fechar }
+            let changed = true;
+            let iterations = 0;
+            while (changed && iterations < 200) {
+                changed = false;
+                iterations++;
+                // Localizar: <w:t...>texto_com_{_sem_}</w:t></w:r> seguido de quaisquer tags, 
+                // depois <w:r...>...<w:t...>mais_texto</w:t>
+                // E mesclar os textos
+                xml = xml.replace(
+                    /(<w:t[^>]*>)([^<]*\{[^}<]*)<\/w:t><\/w:r>([\s\S]*?)<w:r[ >][\s\S]*?<w:t[^>]*>([^<]*)/,
+                    (_match, openTag, text1, _middle, text2) => {
+                        changed = true;
+                        return `${openTag}${text1}${text2}`;
+                    }
+                );
+            }
+
+            console.log(`[DEBUG] XML fix: ${iterations} iterações para ${xmlFile}`);
+            zip.file(xmlFile, xml);
+        });
+
         // Criar instância do docxtemplater
         const doc = new Docxtemplater(zip, {
             paragraphLoop: true,
@@ -152,6 +232,10 @@ export async function generateContract(
 
         // Converter dados para formato do template
         const templateData2 = contractDataToTemplateData(data);
+
+        // DEBUG: Exibir dados enviados ao template
+        console.log('[DEBUG] lavouraLayers:', JSON.stringify(templateData2.lavouraLayers, null, 2));
+        console.log('[DEBUG] aberturaLayers:', JSON.stringify(templateData2.aberturaLayers, null, 2));
 
         // Renderizar documento
         doc.render(templateData2);

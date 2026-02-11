@@ -53,9 +53,12 @@ export const contractedServicesSchema = z.object({
 // Schema para análise de solo
 export const soilAnalysisSchema = z.object({
     depth: z.string().min(1, 'Profundidade é obrigatória'),
-    macroPercentage: z.number().min(0).max(100, 'Porcentagem deve estar entre 0 e 100'),
-    microPercentage: z.number().min(0).max(100, 'Porcentagem deve estar entre 0 e 100'),
-    observations: z.string().optional(),
+    samplesPct: z.string().optional(),
+    macroPct: z.string().optional(),
+    microPct: z.string().optional(),
+    physicalPct: z.string().optional(),
+    sulfurPct: z.string().optional(),
+    extraPct: z.string().optional(),
 });
 
 // Schema principal do contrato
@@ -180,6 +183,10 @@ export const contractFormSchema = z.object({
 
     // Parcelas (como JSON string)
     paymentsJson: z.string().min(1, 'Parcelas são obrigatórias'),
+
+    // Tabelas de Análise (opcional para validação do form, pois gerenciamos via useFieldArray)
+    soilAnalysisLavoura: z.array(soilAnalysisSchema).optional(),
+    soilAnalysisAbertura: z.array(soilAnalysisSchema).optional(),
 });
 
 export type ContractDataSchemaType = z.infer<typeof contractDataSchema>;
