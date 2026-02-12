@@ -92,8 +92,9 @@ export const contractDataSchema = z.object({
     totalAreaHectares: z.number().positive('Área deve ser maior que zero'),
 
     // Valores Financeiros
-    pricePerHectare: z.number().positive('Preço por hectare deve ser maior que zero'),
-    totalValue: z.number().positive('Valor total deve ser maior que zero'),
+    pricePerHectare: z.number().min(0, "Valor por hectare deve ser maior ou igual a 0"),
+    totalValue: z.number().min(0, "Valor total deve ser maior ou igual a 0"),
+    discount: z.number().optional(),
     payments: z.array(paymentSchema).min(1, 'Pelo menos uma parcela é obrigatória'),
 
     // Serviços Contratados
@@ -157,6 +158,7 @@ export const contractFormSchema = z.object({
     // Valores
     pricePerHectare: z.coerce.number().positive('Preço por hectare deve ser maior que zero'),
     totalValue: z.coerce.number().positive('Valor total deve ser maior que zero'),
+    discount: z.coerce.number().optional(),
 
     // Serviços
     hasFertilityConsultancy: z.boolean().default(false),

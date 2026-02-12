@@ -94,6 +94,7 @@ export interface ContractData {
     // Valores Financeiros
     pricePerHectare: number;   // Valor por hectare
     totalValue: number;        // Valor total do contrato
+    discount?: number;         // Desconto em % (novo)
     payments: Payment[];       // Array de parcelas
 
     // Serviços Contratados
@@ -183,6 +184,7 @@ export interface ContractFormData {
     // Valores
     pricePerHectare: number;
     totalValue: number;
+    discount?: number;
 
     // Serviços
     hasFertilityConsultancy: boolean;
