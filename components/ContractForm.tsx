@@ -40,6 +40,12 @@ const STEPS = [
 ];
 
 export default function ContractForm({ initialData, onSubmit, onCancel }: ContractFormProps) {
+    console.log('[DEBUG ContractForm] initialData recebido:', JSON.stringify({
+        soilAnalysisLavoura: initialData?.soilAnalysisLavoura,
+        soilAnalysisAbertura: initialData?.soilAnalysisAbertura,
+        hasSoilAnalysis: initialData?.services?.hasSoilAnalysis,
+    }, null, 2));
+
     // Converter dados iniciais (tipados) para formato do formulário (strings/flat)
     const defaultValues: Partial<ContractFormSchemaType> = {
         // Contratante
@@ -70,8 +76,10 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
         totalAreaHectares: initialData?.totalAreaHectares || 0,
         pricePerHectare: initialData?.pricePerHectare || 0,
         totalValue: initialData?.totalValue || 0,
+        discount: initialData?.discount || 0,
 
         // Serviços
+
         hasFertilityConsultancy: initialData?.services?.hasFertilityConsultancy || false,
         hasSoilSampling: initialData?.services?.hasSoilSampling || false,
         hasDigitalAgriculture: initialData?.services?.hasDigitalAgriculture || false,
@@ -600,6 +608,21 @@ export default function ContractForm({ initialData, onSubmit, onCancel }: Contra
                                             <FormControl>
                                                 <Input type="number" step="0.01" {...field} />
                                             </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+
+                                <FormField
+                                    control={form.control as any}
+                                    name="discount"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Desconto (%)</FormLabel>
+                                            <FormControl>
+                                                <Input type="number" step="0.01" {...field} />
+                                            </FormControl>
+                                            <FormDescription>Apenas informativo</FormDescription>
                                             <FormMessage />
                                         </FormItem>
                                     )}

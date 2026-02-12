@@ -164,6 +164,12 @@ function UploadStep({ onComplete }: { onComplete: (data: any) => void }) {
 
                 if (result?.success && result.data) {
                     hasSuccess = true;
+                    console.log('[DEBUG ContractWizard] result.data recebido:', JSON.stringify({
+                        soilAnalysisLavoura: result.data.soilAnalysisLavoura,
+                        soilAnalysisAbertura: result.data.soilAnalysisAbertura,
+                        hasSoilAnalysis: result.data.services?.hasSoilAnalysis,
+                    }, null, 2));
+
                     // Merge dos dados
                     // Prioridade: dados do arquivo atual sobrescrevem anteriores, exceto arrays/objetos específicos
                     // mas para simplificar: merge raso + merge de serviços
@@ -187,6 +193,12 @@ function UploadStep({ onComplete }: { onComplete: (data: any) => void }) {
                             ? result.data.payments
                             : mergedData.payments
                     };
+
+                    console.log('[DEBUG ContractWizard] mergedData FINAL:', JSON.stringify({
+                        soilAnalysisLavoura: mergedData.soilAnalysisLavoura,
+                        soilAnalysisAbertura: mergedData.soilAnalysisAbertura,
+                        hasSoilAnalysis: mergedData.services?.hasSoilAnalysis,
+                    }, null, 2));
                 } else if (result?.errors) {
                     errors.push(`${file.name}: ${result.errors.join(', ')}`);
                 }
