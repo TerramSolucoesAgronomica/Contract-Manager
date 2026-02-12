@@ -67,6 +67,11 @@ export function contractDataToTemplateData(data: ContractData): TemplateData {
         temOutrosServicos: data.services.hasOtherServices,
         descricaoOutrosServicos: data.services.otherServicesDescription || '',
 
+        // Texto condicional completo para o item g)
+        txtOutrosServicos: data.services.hasOtherServices
+            ? `neste instrumento também são contratados os seguintes serviços: ${data.services.otherServicesDescription}`
+            : 'não são contratados outros serviços.',
+
         // Textos calculados para preenchimento de lacunas "é/não é"
         txtTemConsultoriaFertilidade: data.services.hasFertilityConsultancy ? 'é' : 'não é',
         txtTemAmostragemSolo: data.services.hasSoilSampling ? 'é' : 'não é',

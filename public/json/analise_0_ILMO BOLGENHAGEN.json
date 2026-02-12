@@ -1,0 +1,86 @@
+{
+  "cliente": "0_ILMO BOLGENHAGEN",
+  "arquivo_pdf": "460_0_ILMO BOLGENHAGEN.pdf",
+  "dados_gerais": {
+    "fazenda": "VENEZA MONTIVIDIU - GO",
+    "grade": "2",
+    "área": "2.462,71 HA"
+  },
+  "analises": [
+    {
+      "nome_produto": "TSI BASE",
+      "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) - Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+      "componentes": [
+        {
+          "profundidade": "0-10cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "15%"
+          },
+          "observacoes": "100% 0-10cm25% 10-20cm- Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        },
+        {
+          "profundidade": "10-20cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": "100% 0-10cm25% 10-20cm- Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        }
+      ]
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA: 3.238,26 hectares",
+      "valor": "242.869,50",
+      "valor_extenso": "duzentos e quarenta e dois mil oitocentos e sessenta e nove com cinquenta centavos"
+    }
+  ],
+  "outros_servicos": [],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "30/05/2026",
+      "valor": "121.434,75",
+      "ipca": "",
+      "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+    },
+    {
+      "numero": "2",
+      "data": "30/10/2026",
+      "valor": "121.434,75",
+      "ipca": "",
+      "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+    },
+    {
+      "numero": "3",
+      "data": "30/05/2027",
+      "valor": "121.434,75",
+      "ipca": "",
+      "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+    },
+    {
+      "numero": "4",
+      "data": "30/10/2027",
+      "valor": "121.434,75",
+      "ipca": "",
+      "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+    },
+    {
+      "numero": "5",
+      "data": "30/05/2028",
+      "valor": "121.434,75",
+      "ipca": "",
+      "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+    },
+    {
+      "numero": "6",
+      "data": "30/10/2028",
+      "valor": "121.434,75",
+      "ipca": "",
+      "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+    }
+  ]
+}

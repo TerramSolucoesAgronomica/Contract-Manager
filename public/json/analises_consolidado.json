@@ -1,0 +1,633 @@
+{
+  "metadata": {
+    "total_clientes": 8,
+    "data_geracao": "11/02/2026",
+    "total_analises": 9
+  },
+  "clientes": [
+    {
+      "cliente": "0_GIRLEI POLAZZO",
+      "arquivo_pdf": "281_0_GIRLEI POLAZZO.pdf",
+      "dados_gerais": {
+        "fazenda": "GIRLEI POLAZZO BONFIM - RR",
+        "grade": "5",
+        "área": "1.100,00 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "FERTILE PREMIUM",
+          "descricao_bruta": "Amostras 0-10 cm (100%); Amostras 10-20 cm (25%); Amostras 20-40 cm (10%); Análise 0-10 cm (100% Macro, 15% Micro); Análise 10-20 cm (100% Macro); Análise 20-40 cm (100% Macro+S);",
+          "componentes": [
+            {
+              "profundidade": "0-10 cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "15%"
+              },
+              "observacoes": ""
+            },
+            {
+              "profundidade": "10-20 cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": ""
+            },
+            {
+              "profundidade": "20-40 cm",
+              "estratificacao": "10%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": ""
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 1.100,00 hectares",
+          "valor": "84.700,00",
+          "valor_extenso": "oitenta e quatro mil e setecentos"
+        }
+      ],
+      "outros_servicos": [],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "30/09/2025",
+          "valor": "28.233,34",
+          "ipca": "",
+          "valor_extenso": "vinte e oito mil duzentos e trinta e três com trinta e quatro centavos"
+        },
+        {
+          "numero": "2",
+          "data": "30/10/2025",
+          "valor": "28.233,33",
+          "ipca": "",
+          "valor_extenso": "vinte e oito mil duzentos e trinta e três com trinta e três centavos"
+        },
+        {
+          "numero": "3",
+          "data": "30/11/2025",
+          "valor": "28.233,33",
+          "ipca": "",
+          "valor_extenso": "vinte e oito mil duzentos e trinta e três com trinta e três centavos"
+        }
+      ]
+    },
+    {
+      "cliente": "0_ALEX CALIL RAHAL",
+      "arquivo_pdf": "291_0_ALEX CALIL RAHAL.pdf",
+      "dados_gerais": {
+        "fazenda": "JACUBA IPORÁ - GO",
+        "grade": "3",
+        "área": "1.870,00 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "FERTILE BASE MAX",
+          "descricao_bruta": "Amostras 0-10 cm (100%); Amostras 10-20 cm (25%); Análise 0-10 cm (100% Macro, 15% Micro); Análise 10-20 cm (100% Macro); 3 calibrações",
+          "componentes": [
+            {
+              "profundidade": "0-10 cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "15%"
+              },
+              "observacoes": "3 calibrações"
+            },
+            {
+              "profundidade": "10-20 cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "3 calibrações"
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 1.870,00 hectares",
+          "valor": "117.810,00",
+          "valor_extenso": "cento e dezessete mil oitocentos e dez"
+        }
+      ],
+      "outros_servicos": [
+        {
+          "nome": "VARIASEED",
+          "area_ha": "1.870,00",
+          "custo_hectare": "0,00",
+          "desconto": "100,0",
+          "valor": "0,00",
+          "valor_extenso": "zero",
+          "custo_hectare_extenso": "zero"
+        }
+      ],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "30/03/2026",
+          "valor": "58.905,00",
+          "ipca": "",
+          "valor_extenso": "cinquenta e oito mil novecentos e cinco"
+        },
+        {
+          "numero": "2",
+          "data": "30/07/2026",
+          "valor": "58.905,00",
+          "ipca": "",
+          "valor_extenso": "cinquenta e oito mil novecentos e cinco"
+        }
+      ]
+    },
+    {
+      "cliente": "6_CLAUDIO JOAO GORGEN",
+      "arquivo_pdf": "369_6_CLAUDIO JOAO GORGEN.pdf",
+      "dados_gerais": {
+        "nome": "FERTILE PREMIUM",
+        "descrição": "Amostras 0-10 cm (100%); Amostras 10-20 cm (25%); Amostras 20-40 cm (10%); Análise 0-10 cm (100% Macro, 15% Micro); Análise 10-20 cm (100% Macro); Análise 20-40 cm (100% Macro+S);"
+      },
+      "analises": [],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 20.000,00 hectares",
+          "valor": "1.020.000,00",
+          "valor_extenso": "um milhão e vinte mil"
+        }
+      ],
+      "outros_servicos": [],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "16/01/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "2",
+          "data": "16/02/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "3",
+          "data": "16/03/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "4",
+          "data": "16/04/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "5",
+          "data": "16/05/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "6",
+          "data": "16/06/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "7",
+          "data": "16/07/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "8",
+          "data": "16/08/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "9",
+          "data": "16/09/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        },
+        {
+          "numero": "10",
+          "data": "16/10/2026",
+          "valor": "102.000,00",
+          "ipca": "Não",
+          "valor_extenso": "cento e dois mil"
+        }
+      ]
+    },
+    {
+      "cliente": "0_AILTON LEAO DE MORAES",
+      "arquivo_pdf": "422_0_AILTON LEAO DE MORAES.pdf",
+      "dados_gerais": {
+        "fazenda": "SANTA RITA RIO VERDE - GO",
+        "grade": "5",
+        "área": "500,00 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "TSI BASE",
+          "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) - Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-10cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "15%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm- Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "10-20cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm- Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        },
+        {
+          "nome_produto": "TSI ABERTURA",
+          "descricao_bruta": "100% 0-20cm (100% macro + 25% analise física + 25% Micro) 25% 20-40cm (100%macro) Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-20cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "25%"
+              },
+              "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "20-40cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 500,00 hectares",
+          "valor": "22.320,00",
+          "valor_extenso": "vinte e dois mil trezentos e vinte"
+        }
+      ],
+      "outros_servicos": [],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "27/02/2026",
+          "valor": "15.000,00",
+          "ipca": "",
+          "valor_extenso": "quinze mil"
+        },
+        {
+          "numero": "2",
+          "data": "30/07/2026",
+          "valor": "15.000,00",
+          "ipca": "",
+          "valor_extenso": "quinze mil"
+        }
+      ]
+    },
+    {
+      "cliente": "0_ILMO BOLGENHAGEN",
+      "arquivo_pdf": "460_0_ILMO BOLGENHAGEN.pdf",
+      "dados_gerais": {
+        "fazenda": "VENEZA MONTIVIDIU - GO",
+        "grade": "2",
+        "área": "2.462,71 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "TSI BASE",
+          "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) - Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-10cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "15%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm- Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "10-20cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm- Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 3.238,26 hectares",
+          "valor": "242.869,50",
+          "valor_extenso": "duzentos e quarenta e dois mil oitocentos e sessenta e nove com cinquenta centavos"
+        }
+      ],
+      "outros_servicos": [],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "30/05/2026",
+          "valor": "121.434,75",
+          "ipca": "",
+          "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+        },
+        {
+          "numero": "2",
+          "data": "30/10/2026",
+          "valor": "121.434,75",
+          "ipca": "",
+          "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+        },
+        {
+          "numero": "3",
+          "data": "30/05/2027",
+          "valor": "121.434,75",
+          "ipca": "",
+          "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+        },
+        {
+          "numero": "4",
+          "data": "30/10/2027",
+          "valor": "121.434,75",
+          "ipca": "",
+          "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+        },
+        {
+          "numero": "5",
+          "data": "30/05/2028",
+          "valor": "121.434,75",
+          "ipca": "",
+          "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+        },
+        {
+          "numero": "6",
+          "data": "30/10/2028",
+          "valor": "121.434,75",
+          "ipca": "",
+          "valor_extenso": "cento e vinte e um mil quatrocentos e trinta e quatro com setenta e cinco centavos"
+        }
+      ]
+    },
+    {
+      "cliente": "0_HAROLDO RODRIGUES DA CUNHA",
+      "arquivo_pdf": "528_0_HAROLDO RODRIGUES DA CUNHA.pdf",
+      "dados_gerais": {
+        "fazenda": "PRIMAVERA ITAJA - GO",
+        "grade": "5",
+        "área": "489,00 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "TERRAM SOLO INTELIGENTE - TSI",
+          "descricao_bruta": "100% 0-20cm (100% macro + 25% física + 25% Micro) 25% 20-40cm (100%macro) Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-20cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "25%"
+              },
+              "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "20-40cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 489,00 hectares",
+          "valor": "26.895,00",
+          "valor_extenso": "vinte e seis mil oitocentos e noventa e cinco"
+        }
+      ],
+      "outros_servicos": [],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "30/03/2026",
+          "valor": "6.723,75",
+          "ipca": "Não",
+          "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+        },
+        {
+          "numero": "2",
+          "data": "30/04/2026",
+          "valor": "6.723,75",
+          "ipca": "Não",
+          "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+        },
+        {
+          "numero": "3",
+          "data": "30/05/2026",
+          "valor": "6.723,75",
+          "ipca": "Não",
+          "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+        },
+        {
+          "numero": "4",
+          "data": "30/06/2026",
+          "valor": "6.723,75",
+          "ipca": "Não",
+          "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+        }
+      ]
+    },
+    {
+      "cliente": "0_Fernando de Castro Fonseca Filho",
+      "arquivo_pdf": "545_0_Fernando de Castro Fonseca Filho.pdf",
+      "dados_gerais": {
+        "fazenda": "3 FURNAS TRINDADE - GO",
+        "grade": "5",
+        "área": "907,00 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "TSI PREMIUM",
+          "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) 10% 20-40 (100% macro+S). Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-10cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "15%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "10-20cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 907,00 hectares",
+          "valor": "51.699,00",
+          "valor_extenso": "cinquenta e um mil seiscentos e noventa e nove"
+        }
+      ],
+      "outros_servicos": [],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "30/04/2026",
+          "valor": "25.849,50",
+          "ipca": "",
+          "valor_extenso": "vinte e cinco mil oitocentos e quarenta e nove com cinquenta centavos"
+        },
+        {
+          "numero": "2",
+          "data": "30/10/2026",
+          "valor": "25.849,50",
+          "ipca": "",
+          "valor_extenso": "vinte e cinco mil oitocentos e quarenta e nove com cinquenta centavos"
+        }
+      ]
+    },
+    {
+      "cliente": "0_CLIENTE TESTE",
+      "arquivo_pdf": "559_0_CLIENTE TESTE.pdf",
+      "dados_gerais": {
+        "fazenda": "7 ESTRELAS AGRONEGOCIOS BONFIM - RR",
+        "grade": "2",
+        "área": "1.000,00 HA"
+      },
+      "analises": [
+        {
+          "nome_produto": "TSI ABERTURA",
+          "descricao_bruta": "100% 0-20cm (100% macro + 25% analise física + 25% Micro) 25% 20-40cm (100%macro) Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-20cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "25%"
+              },
+              "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "20-40cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        },
+        {
+          "nome_produto": "TSI PREMIUM",
+          "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) 10% 20-40 (100% macro+S). Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+          "componentes": [
+            {
+              "profundidade": "0-10cm",
+              "estratificacao": "100%",
+              "analises": {
+                "macro": "100%",
+                "micro": "15%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            },
+            {
+              "profundidade": "10-20cm",
+              "estratificacao": "25%",
+              "analises": {
+                "macro": "100%"
+              },
+              "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+            }
+          ]
+        }
+      ],
+      "investimento": [
+        {
+          "tipo": "ÁREA CONTRATADA: 11.000,00 hectares",
+          "valor": "300.000,00",
+          "valor_extenso": "trezentos mil"
+        }
+      ],
+      "outros_servicos": [
+        {
+          "nome": "OTIMIZE BASE",
+          "area_ha": "1.000,00",
+          "custo_hectare": "20,00",
+          "valor": "20.000,00",
+          "valor_extenso": "vinte mil",
+          "custo_hectare_extenso": "vinte"
+        },
+        {
+          "nome": "TVS - TAXA VARIAVEL DE SEMENTES",
+          "area_ha": "1.000,00",
+          "valor": "0,00",
+          "valor_extenso": "zero"
+        },
+        {
+          "nome": "NEMA SCAN",
+          "area_ha": "1.000,00",
+          "custo_hectare": "35,00",
+          "valor": "35.000,00",
+          "valor_extenso": "trinta e cinco mil",
+          "custo_hectare_extenso": "trinta e cinco"
+        }
+      ],
+      "parcelas": [
+        {
+          "numero": "1",
+          "data": "08/03/2026",
+          "valor": "75.000,00",
+          "ipca": "",
+          "valor_extenso": "setenta e cinco mil"
+        }
+      ]
+    }
+  ]
+}

@@ -102,6 +102,9 @@ export async function parseJson(file: File): Promise<ParseResult<Partial<Contrac
         }
 
         // 5. Serviços (Heurística baseada em nomes e descrições)
+        // Salva valores já extraídos de dados_gerais que ficam dentro de services
+        const savedGridSize = data.services?.samplingGridSize;
+
         data.services = {
             hasFertilityConsultancy: false,
             hasSoilSampling: false,
@@ -113,6 +116,8 @@ export async function parseJson(file: File): Promise<ParseResult<Partial<Contrac
             hasCompactionSamples: false,
             hasCalibration: false,
             hasOtherServices: false,
+            // Restaura valores salvos
+            samplingGridSize: savedGridSize || '',
         };
 
         const checkServiceText = (text: string) => {
@@ -186,8 +191,16 @@ export async function parseJson(file: File): Promise<ParseResult<Partial<Contrac
                     // Ainda tenta mapear para categorias conhecidas para marcar os boxes
                     checkServiceText(s.nome);
 
-                    // Mas também adiciona à lista de descrições explícitas
-                    outrosNomes.push(s.nome);
+                    // Mas também adiciona à lista de descrições explícitas com detalhes
+                    const detalhes: string[] = [];
+                    if (s.area_ha) detalhes.push(`Área: ${s.area_ha} ha`);
+                    if (s.custo_hectare) detalhes.push(`Custo/ha: R$ ${s.custo_hectare}`);
+                    if (s.desconto) detalhes.push(`Desconto: ${s.desconto}`);
+                    if (s.valor) detalhes.push(`Valor Total: R$ ${s.valor}`);
+                    if (s.duracao) detalhes.push(`Duração: ${s.duracao}`);
+
+                    const infoExtra = detalhes.length > 0 ? ` (${detalhes.join(', ')})` : '';
+                    outrosNomes.push(`${s.nome}${infoExtra}`);
                 }
             });
 

@@ -1,0 +1,97 @@
+{
+  "cliente": "0_CLIENTE TESTE",
+  "arquivo_pdf": "559_0_CLIENTE TESTE.pdf",
+  "dados_gerais": {
+    "fazenda": "7 ESTRELAS AGRONEGOCIOS BONFIM - RR",
+    "grade": "2",
+    "área": "1.000,00 HA"
+  },
+  "analises": [
+    {
+      "nome_produto": "TSI ABERTURA",
+      "descricao_bruta": "100% 0-20cm (100% macro + 25% analise física + 25% Micro) 25% 20-40cm (100%macro) Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+      "componentes": [
+        {
+          "profundidade": "0-20cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "25%"
+          },
+          "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        },
+        {
+          "profundidade": "20-40cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        }
+      ]
+    },
+    {
+      "nome_produto": "TSI PREMIUM",
+      "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) 10% 20-40 (100% macro+S). Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+      "componentes": [
+        {
+          "profundidade": "0-10cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "15%"
+          },
+          "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        },
+        {
+          "profundidade": "10-20cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        }
+      ]
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA: 11.000,00 hectares",
+      "valor": "300.000,00",
+      "valor_extenso": "trezentos mil"
+    }
+  ],
+  "outros_servicos": [
+    {
+      "nome": "OTIMIZE BASE",
+      "area_ha": "1.000,00",
+      "custo_hectare": "20,00",
+      "valor": "20.000,00",
+      "valor_extenso": "vinte mil",
+      "custo_hectare_extenso": "vinte"
+    },
+    {
+      "nome": "TVS - TAXA VARIAVEL DE SEMENTES",
+      "area_ha": "1.000,00",
+      "valor": "0,00",
+      "valor_extenso": "zero"
+    },
+    {
+      "nome": "NEMA SCAN",
+      "area_ha": "1.000,00",
+      "custo_hectare": "35,00",
+      "valor": "35.000,00",
+      "valor_extenso": "trinta e cinco mil",
+      "custo_hectare_extenso": "trinta e cinco"
+    }
+  ],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "08/03/2026",
+      "valor": "75.000,00",
+      "ipca": "",
+      "valor_extenso": "setenta e cinco mil"
+    }
+  ]
+}

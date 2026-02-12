@@ -1,0 +1,32 @@
+{
+  "arquivo": "291_0_ALEX CALIL RAHAL.pdf",
+  "dados_gerais": {
+    "fazenda": "JACUBA\nIPORÁ - GO",
+    "grade": "3",
+    "área": "1.870,00 HA"
+  },
+  "produtos": [
+    {
+      "nome": "FERTILE BASE MAX",
+      "descricao": "Amostras 0-10 cm (100%); Amostras 10-20 cm\n(25%); Análise 0-10 cm (100% Macro, 15% Micro);\nAnálise 10-20 cm (100% Macro); 3 calibrações"
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "VALOR TOTAL ANUAL",
+      "valor": "117.810,00"
+    }
+  ],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "30/03/2026",
+      "valor": "58.905,00"
+    },
+    {
+      "numero": "2",
+      "data": "30/07/2026",
+      "valor": "58.905,00"
+    }
+  ]
+}

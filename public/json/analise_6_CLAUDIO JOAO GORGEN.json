@@ -1,0 +1,89 @@
+{
+  "cliente": "6_CLAUDIO JOAO GORGEN",
+  "arquivo_pdf": "369_6_CLAUDIO JOAO GORGEN.pdf",
+  "dados_gerais": {
+    "nome": "FERTILE PREMIUM",
+    "descrição": "Amostras 0-10 cm (100%); Amostras 10-20 cm (25%); Amostras 20-40 cm (10%); Análise 0-10 cm (100% Macro, 15% Micro); Análise 10-20 cm (100% Macro); Análise 20-40 cm (100% Macro+S);"
+  },
+  "analises": [],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA: 20.000,00 hectares",
+      "valor": "1.020.000,00",
+      "valor_extenso": "um milhão e vinte mil"
+    }
+  ],
+  "outros_servicos": [],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "16/01/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "2",
+      "data": "16/02/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "3",
+      "data": "16/03/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "4",
+      "data": "16/04/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "5",
+      "data": "16/05/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "6",
+      "data": "16/06/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "7",
+      "data": "16/07/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "8",
+      "data": "16/08/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "9",
+      "data": "16/09/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    },
+    {
+      "numero": "10",
+      "data": "16/10/2026",
+      "valor": "102.000,00",
+      "ipca": "Não",
+      "valor_extenso": "cento e dois mil"
+    }
+  ]
+}
