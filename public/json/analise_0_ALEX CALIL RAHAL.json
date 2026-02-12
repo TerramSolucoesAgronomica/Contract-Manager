@@ -33,41 +33,7 @@
   ],
   "investimento": [
     {
-      "tipo": "ÁREA CONTRATADA (HA)",
-      "valor": "1.870,00",
-      "valor_extenso": "um mil oitocentos e setenta"
-    },
-    {
-      "tipo": "PRODUTO",
-      "nome": "FERTILE BASE MAX",
-      "valor": ""
-    },
-    {
-      "tipo": "PRODUTO_AREA",
-      "produto": "FERTILE BASE MAX",
-      "valor": "1.870,00",
-      "valor_extenso": "um mil oitocentos e setenta"
-    },
-    {
-      "tipo": "CUSTO_HECTARE",
-      "produto": "FERTILE BASE MAX",
-      "valor": "63,00",
-      "valor_extenso": "sessenta e três"
-    },
-    {
-      "tipo": "DESCONTO",
-      "produto": "FERTILE BASE MAX",
-      "valor": "10,0%",
-      "valor_extenso": "10.0%"
-    },
-    {
-      "tipo": "VALOR_TOTAL",
-      "produto": "FERTILE BASE MAX",
-      "valor": "117.810,00",
-      "valor_extenso": "cento e dezessete mil oitocentos e dez"
-    },
-    {
-      "tipo": "VALOR TOTAL ANUAL",
+      "tipo": "ÁREA CONTRATADA: 1.870,00 hectares",
       "valor": "117.810,00",
       "valor_extenso": "cento e dezessete mil oitocentos e dez"
     }
@@ -77,9 +43,8 @@
       "nome": "VARIASEED",
       "area_ha": "1.870,00",
       "custo_hectare": "0,00",
-      "desconto": "100,0%",
+      "desconto": "100,0",
       "valor": "0,00",
-      "duracao": "",
       "valor_extenso": "zero",
       "custo_hectare_extenso": "zero"
     }

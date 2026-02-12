@@ -1,0 +1,72 @@
+{
+  "cliente": "0_HAROLDO RODRIGUES DA CUNHA",
+  "arquivo_pdf": "528_0_HAROLDO RODRIGUES DA CUNHA.pdf",
+  "dados_gerais": {
+    "fazenda": "PRIMAVERA ITAJA - GO",
+    "grade": "5",
+    "área": "489,00 HA"
+  },
+  "analises": [
+    {
+      "nome_produto": "TERRAM SOLO INTELIGENTE - TSI",
+      "descricao_bruta": "100% 0-20cm (100% macro + 25% física + 25% Micro) 25% 20-40cm (100%macro) Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+      "componentes": [
+        {
+          "profundidade": "0-20cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "25%"
+          },
+          "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        },
+        {
+          "profundidade": "20-40cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": "100% 0-20cm25% 20-40cmPlanejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        }
+      ]
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA: 489,00 hectares",
+      "valor": "26.895,00",
+      "valor_extenso": "vinte e seis mil oitocentos e noventa e cinco"
+    }
+  ],
+  "outros_servicos": [],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "30/03/2026",
+      "valor": "6.723,75",
+      "ipca": "Não",
+      "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+    },
+    {
+      "numero": "2",
+      "data": "30/04/2026",
+      "valor": "6.723,75",
+      "ipca": "Não",
+      "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+    },
+    {
+      "numero": "3",
+      "data": "30/05/2026",
+      "valor": "6.723,75",
+      "ipca": "Não",
+      "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+    },
+    {
+      "numero": "4",
+      "data": "30/06/2026",
+      "valor": "6.723,75",
+      "ipca": "Não",
+      "valor_extenso": "seis mil setecentos e vinte e três com setenta e cinco centavos"
+    }
+  ]
+}

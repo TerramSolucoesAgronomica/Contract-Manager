@@ -279,6 +279,7 @@ export interface TemplateData {
     txtTemAnaliseSolo: string;
     txtTemAmostrasCompactacao: string;
     txtTemCalibracoes: string;
+    txtOutrosServicos: string;
 
     // Detalhes
     gradeAmostral: string;

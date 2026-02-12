@@ -1,0 +1,31 @@
+{
+  "arquivo": "559_0_CLIENTE TESTE.pdf",
+  "dados_gerais": {
+    "fazenda": "7 ESTRELAS AGRONEGOCIOS\nBONFIM - RR",
+    "grade": "2",
+    "área": "1.000,00 HA"
+  },
+  "produtos": [
+    {
+      "nome": "TSI ABERTURA",
+      "descricao": "100% 0-20cm (100% macro + 25% analise física +\n25% Micro)\n25% 20-40cm (100%macro)\nPlanejamento Fertilizantes, corretivos e sementes +\n3 Reuniões de alinhamento"
+    },
+    {
+      "nome": "TSI PREMIUM",
+      "descricao": "100% 0-10cm (100% macro + 15%micro)\n25% 10-20cm (100% macro)\n10% 20-40 (100% macro+S).\nPlanejamento Fertilizantes, corretivos e sementes +\n3 Reuniões de alinhamento"
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "VALOR TOTAL ANUAL",
+      "valor": "320.000,00"
+    }
+  ],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "08/03/2026",
+      "valor": "75.000,00"
+    }
+  ]
+}

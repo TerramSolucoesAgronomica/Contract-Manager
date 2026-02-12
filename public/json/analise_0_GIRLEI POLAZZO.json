@@ -1,0 +1,73 @@
+{
+  "cliente": "0_GIRLEI POLAZZO",
+  "arquivo_pdf": "281_0_GIRLEI POLAZZO.pdf",
+  "dados_gerais": {
+    "fazenda": "GIRLEI POLAZZO BONFIM - RR",
+    "grade": "5",
+    "área": "1.100,00 HA"
+  },
+  "analises": [
+    {
+      "nome_produto": "FERTILE PREMIUM",
+      "descricao_bruta": "Amostras 0-10 cm (100%); Amostras 10-20 cm (25%); Amostras 20-40 cm (10%); Análise 0-10 cm (100% Macro, 15% Micro); Análise 10-20 cm (100% Macro); Análise 20-40 cm (100% Macro+S);",
+      "componentes": [
+        {
+          "profundidade": "0-10 cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "15%"
+          },
+          "observacoes": ""
+        },
+        {
+          "profundidade": "10-20 cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": ""
+        },
+        {
+          "profundidade": "20-40 cm",
+          "estratificacao": "10%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": ""
+        }
+      ]
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA: 1.100,00 hectares",
+      "valor": "84.700,00",
+      "valor_extenso": "oitenta e quatro mil e setecentos"
+    }
+  ],
+  "outros_servicos": [],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "30/09/2025",
+      "valor": "28.233,34",
+      "ipca": "",
+      "valor_extenso": "vinte e oito mil duzentos e trinta e três com trinta e quatro centavos"
+    },
+    {
+      "numero": "2",
+      "data": "30/10/2025",
+      "valor": "28.233,33",
+      "ipca": "",
+      "valor_extenso": "vinte e oito mil duzentos e trinta e três com trinta e três centavos"
+    },
+    {
+      "numero": "3",
+      "data": "30/11/2025",
+      "valor": "28.233,33",
+      "ipca": "",
+      "valor_extenso": "vinte e oito mil duzentos e trinta e três com trinta e três centavos"
+    }
+  ]
+}

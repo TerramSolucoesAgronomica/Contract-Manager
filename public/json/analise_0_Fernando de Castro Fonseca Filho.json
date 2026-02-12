@@ -1,0 +1,58 @@
+{
+  "cliente": "0_Fernando de Castro Fonseca Filho",
+  "arquivo_pdf": "545_0_Fernando de Castro Fonseca Filho.pdf",
+  "dados_gerais": {
+    "fazenda": "3 FURNAS TRINDADE - GO",
+    "grade": "5",
+    "área": "907,00 HA"
+  },
+  "analises": [
+    {
+      "nome_produto": "TSI PREMIUM",
+      "descricao_bruta": "100% 0-10cm (100% macro + 15%micro) 25% 10-20cm (100% macro) 10% 20-40 (100% macro+S). Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento",
+      "componentes": [
+        {
+          "profundidade": "0-10cm",
+          "estratificacao": "100%",
+          "analises": {
+            "macro": "100%",
+            "micro": "15%"
+          },
+          "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        },
+        {
+          "profundidade": "10-20cm",
+          "estratificacao": "25%",
+          "analises": {
+            "macro": "100%"
+          },
+          "observacoes": "100% 0-10cm25% 10-20cm10% 20-40. Planejamento Fertilizantes, corretivos e sementes + 3 Reuniões de alinhamento"
+        }
+      ]
+    }
+  ],
+  "investimento": [
+    {
+      "tipo": "ÁREA CONTRATADA: 907,00 hectares",
+      "valor": "51.699,00",
+      "valor_extenso": "cinquenta e um mil seiscentos e noventa e nove"
+    }
+  ],
+  "outros_servicos": [],
+  "parcelas": [
+    {
+      "numero": "1",
+      "data": "30/04/2026",
+      "valor": "25.849,50",
+      "ipca": "",
+      "valor_extenso": "vinte e cinco mil oitocentos e quarenta e nove com cinquenta centavos"
+    },
+    {
+      "numero": "2",
+      "data": "30/10/2026",
+      "valor": "25.849,50",
+      "ipca": "",
+      "valor_extenso": "vinte e cinco mil oitocentos e quarenta e nove com cinquenta centavos"
+    }
+  ]
+}
